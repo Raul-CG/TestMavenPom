@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.raul.test</groupId>
+  <artifactId>TestMavenPom</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+  <name>parent-project</name>
+ 
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <modules>
+  	<module>App</module>
+  	<module>Util</module>
+  </modules>
+  
+  <dependencies>
+ 	 <dependency>
+    	<groupId>org.apache.maven.plugins</groupId>
+   	 	<artifactId>maven-compiler-plugin</artifactId>
+    	<version>3.8.1</version>
+	</dependency>
+  </dependencies>
+
+</project>
